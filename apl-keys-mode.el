@@ -1,5 +1,5 @@
 ;;;###autoload
-(define-minor-mode apl-mode
+(define-minor-mode apl-keys-mode
 "Map APL key chords based on those used in tryapl.org/"
   :lighter " apl"
   :keymap (let ((map (make-sparse-keymap)))
@@ -59,6 +59,6 @@
             (define-key map (kbd "C-c `~") (kbd "⌺"))
             map))
 ;;;###autoload
-(add-hook 'text-mode-hook 'apl-mode)
+(add-hook 'text-mode-hook 'apl-keys-mode)
 
 (provide 'apl-keys-mode)
