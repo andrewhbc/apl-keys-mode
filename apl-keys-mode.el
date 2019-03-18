@@ -61,4 +61,4 @@
 ;;;###autoload
 (add-hook 'text-mode-hook 'apl-mode)
 
-(provide 'apl-mode)
+(provide 'apl-keys-mode)
